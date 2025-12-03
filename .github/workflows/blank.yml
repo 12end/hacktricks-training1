@@ -25,5 +25,8 @@ jobs:
           role-to-assume: arn:aws:iam::277978271553:role/sts-lab-2-target
           role-session-name: OIDCSession
 
+      - run: aws sts get-caller-identity
+        shell: bash
+
       - run: aws secretsmanager list-secrets
         shell: bash
