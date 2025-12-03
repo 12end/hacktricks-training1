@@ -21,7 +21,7 @@ jobs:
       - name: Configure AWS Credentials
         uses: aws-actions/configure-aws-credentials@v1
         with:
-          aws-region: eu-west-1
+          aws-region: eu-northeast-1
           role-to-assume: arn:aws:iam::277978271553:role/sts-lab-2-target
           role-session-name: OIDCSession
 
